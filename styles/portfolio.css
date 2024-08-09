@@ -1,3 +1,24 @@
+element.style {
+}
+@media (max-width: 900px) {
+    .project-desciption {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.project-desciption {
+    padding: 120px 60px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
 :root {
 	--branding-color: #6c63ff;
 	--secondary-color: #f9f7fe;
