@@ -7,6 +7,31 @@ element.style {
 	}
 }
 
+.mb-5 {
+	margin-bottom: 3rem !important;
+}
+.col {
+	flex: 1 0 0%;
+}
+.row > * {
+	flex-shrink: 0;
+	width: 100%;
+	max-width: 100%;
+	padding-right: calc(var(--bs-gutter-x) / 2);
+	padding-left: calc(var(--bs-gutter-x) / 2);
+	margin-top: var(--bs-gutter-y);
+}
+
+.row {
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: calc(var(--bs-gutter-y) * -1);
+	margin-right: calc(var(--bs-gutter-x) / -2);
+	margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
 .img-fluid {
 	max-width: 100%;
 	height: auto;
@@ -74,15 +99,15 @@ p {
 }
 
 .hero p {
-	font-size: 36px;
-	font-weight: bold;
+	font-size: 24px;
+	font-weight: normal;
 	margin: 0;
 	color: #272142;
 }
 
 .hero h2 {
 	font-family: var(--heading-font-family);
-	font-weight: normal;
+	font-weight: bold;
 	line-height: 2;
 	font-size: 24px;
 }
